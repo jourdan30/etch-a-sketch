@@ -1,0 +1,74 @@
+html {
+    background-color: rgb(208, 245, 232);
+}
+body {
+    text-align: center;
+    width: 1280px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p, label, button, select, option, li {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#container {
+    display: flex;
+    text-align: left;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 20px;
+}
+
+#etch-container {
+    border: 30px solid red;
+    border-top: 50px solid red;
+    border-bottom: 60px solid red;
+    border-radius: 5%;
+}
+
+#grid-container {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    background-color: white;
+}
+
+.grid-row {
+    border-width :0px;
+    display: flex;
+}
+
+.grid-column {
+    border-width: 0px;
+}
+
+#left-knob {
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    margin-top: 7px;
+}
+
+#right-knob {
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 560px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Etch-a-Sketch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script charset="utf-8" src="script/main.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div id='container'>
+        <div id='settings'>
+            <p>INSTRUCTIONS</p>  
+            <ul>
+                <li>Select a canvas size, hit the button and start drawing!</li>
+                <li>You can reset the canvas at any stage by pressing the button.</li>
+                <li>You can change the canvas size by selecting a new size and hitting the button - this will reset the canvas</li>
+                <li>You can change the colour at any stage - this does not reset the canvas!</li>
+            </ul>
+           <p>SETTINGS</p>
+            <div class = 'size-container'><label for='grid-size'> Choose size of canvas:</label>
+                <select name='grid-size' id='grid-size'>
+                    <option value='8'>8x8</option>
+                    <option value='16'>16x16</option>
+                    <option value='32'>32x32</option>
+                    <option value='64'>64x64</option>
+                    <option value='128'>128x128</option>
+                </select>
+            </div>
+            <div><button id='reset-button' alt='Reset grid button'>Start / Reset grid and size</button> </div>  
+                <div class='color-container'><label for='colors'>Choose a colour:</label>
+                <select name='colors' class='colors' id='color-selector'>
+                    <option value='black'>Black</option>
+                    <option value='red'>Red</option>
+                    <option value='yellow'>Yellow</option>
+                    <option value='green'>Green</option>
+                    <option value='blue'>Blue</option>
+                    <option value='pink'>Pink</option>
+                    <option value='rainbow'>Rainbow</option>
+                    <option value='white'>White</option>
+                </select></div>
+            
+        </div>
+    <div id='etch-container'>
+        <div id='grid-container'></div>
+        <div id='left-knob'> <div id='right-knob'></div></div>
+    </div>    
+    </div>
+</body>
+</html>
