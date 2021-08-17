@@ -37,6 +37,7 @@ p, label, button, select, option, li {
     border-top: 50px solid red;
     border-bottom: 60px solid red;
     border-radius: 5%;
+    height: 600px;
 }
 
 #grid-container {
@@ -60,8 +61,8 @@ p, label, button, select, option, li {
     width: 45px;
     background-color: white;
     border-radius: 50%;
-    position: fixed;
-    margin-top: 7px;
+    position: relative;
+    bottom: -5px;
 }
 
 #right-knob {
@@ -70,5 +71,5 @@ p, label, button, select, option, li {
     background-color: white;
     border-radius: 50%;
     position: relative;
-    left: 560px;
+    left: 555px;
 }
